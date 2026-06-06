@@ -12,11 +12,11 @@ export default function SkillsSection() {
     },
     { 
       category: locale === 'ru' ? 'Бэкенд и Базы данных' : locale === 'uz' ? 'Backend va Ma\'lumotlar bazasi' : 'Backend & Database', 
-      items: ['C#/.NET', 'Node.js', 'NestJS', 'Express', 'Python', 'MongoDB', 'REST APIs'] 
+      items: ['Node.js', 'NestJS', 'Express', 'Python', 'MongoDB'] 
     },
     { 
       category: locale === 'ru' ? 'Инструменты и Геймдев' : locale === 'uz' ? 'Asboblar va GameDev' : 'Tools & GameDev', 
-      items: ['Unity', 'C#', 'Git', 'Vercel', 'AI Workflows', 'Product Design', 'Figma', 'AntDesign'] 
+      items: ['Unity', 'C#', 'Git', 'Vercel', 'AI Workflows', 'Figma'] 
     }
   ];
 

@@ -105,28 +105,7 @@ export default function HeroSection() {
           
           {/* Text Content */}
           <div className="text-left space-y-6">
-            {/* Status badge */}
-            <div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full animate-fade-in-down"
-              style={{
-                background: 'rgba(108, 92, 231, 0.08)',
-                border: '1px solid var(--border-subtle)',
-                fontSize: '0.85rem',
-                color: 'var(--accent-secondary)',
-              }}
-            >
-              <span
-                className="w-2 h-2 rounded-full"
-                style={{
-                  background: '#22d3ee',
-                  boxShadow: '0 0 8px rgba(34, 211, 238, 0.6)',
-                  animation: 'fadeIn 1.5s ease-in-out infinite',
-                }}
-              />
-              {t.hero.badge}
-            </div>
-
-            {/* Subtitle / Friendly Greeting */}
+          {/* Subtitle / Friendly Greeting */}
             <p className="text-accent text-lg md:text-xl font-semibold tracking-wide animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               {t.hero.subtitle}
             </p>
