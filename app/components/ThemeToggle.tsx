@@ -26,7 +26,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="relative flex items-center h-9 w-9 md:w-16 rounded-full border border-[var(--border-default)] bg-[var(--bg-secondary)] p-1 transition-all duration-300 hover:border-accent"
+      className="relative flex items-center h-9 w-9 md:w-17 rounded-full border border-[var(--border-default)] bg-[var(--bg-secondary)] p-1 transition-all duration-300 hover:border-accent"
       aria-label="Toggle theme"
     >
       <div 

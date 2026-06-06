@@ -436,3 +436,14 @@ h1, h2, h3, h4, h5, h6 {
 [data-theme="light"] .theme-toggle-thumb {
   transform: translateX(24px);
 }
+
+[data-theme="light"] .skill-badge {
+  color: #1a1a2e;
+  background: rgba(108, 92, 231, 0.08);
+  border-color: rgba(108, 92, 231, 0.2);
+}
+
+[data-theme="light"] .skill-badge:hover {
+  color: #1a1a2e;
+  background: rgba(108, 92, 231, 0.15);
+}

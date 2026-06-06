@@ -50,19 +50,19 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 text-center">
               {/* Карточка 1 */}
               <div className="p-4 rounded-2xl glass border-subtle hover:border-accent transition-all duration-300">
-                <div className="text-xl font-bold text-white">{t.about.stats.frontend}</div>
+                <div className="text-xl font-bold text-muted">{t.about.stats.frontend}</div>
                 <div className="text-xs text-muted mt-1">{t.about.stats.frontendDesc}</div>
               </div>
 
               {/* Карточка 2 */}
               <div className="p-4 rounded-2xl glass border-subtle hover:border-accent transition-all duration-300">
-                <div className="text-xl font-bold text-white">{t.about.stats.backend}</div>
+                <div className="text-xl font-bold text-muted">{t.about.stats.backend}</div>
                 <div className="text-xs text-muted mt-1">{t.about.stats.backendDesc}</div>
               </div>
 
               {/* Карточка 3 */}
               <div className="p-4 rounded-2xl glass border-subtle hover:border-accent transition-all duration-300">
-                <div className="text-xl font-bold text-white">{t.about.stats.gamedev}</div>
+                <div className="text-xl font-bold text-muted">{t.about.stats.gamedev}</div>
                 <div className="text-xs text-muted mt-1">{t.about.stats.gamedevDesc}</div>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function AboutSection() {
           {/* Current Focus Panel (Right column) */}
           <div className="space-y-6 lg:pl-6">
             <div className="p-8 rounded-3xl border border-default bg-surface/40 backdrop-blur-sm shadow-xl space-y-6">
-              <h3 className="text-lg font-bold text-white tracking-tight flex items-center gap-2">
+              <h3 className="text-lg font-bold text-muted tracking-tight flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-accent animate-pulse" />
                 {t.about.focusTitle}
               </h3>

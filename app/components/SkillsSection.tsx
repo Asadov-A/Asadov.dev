@@ -36,9 +36,14 @@ export default function SkillsSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {SKILLS.map((cat, idx) => (
-            <div key={idx} className="p-6 rounded-2xl glass border-default flex flex-col justify-between hover:border-accent transition-all duration-300">
+            <div 
+              key={idx} 
+              className="p-6 rounded-3xl glass border-default flex flex-col justify-between transition-all duration-300 hover:border-accent card-hover"
+            >
               <div>
-                <h3 className="text-sm font-bold text-accent-secondary mb-4 uppercase tracking-wider">{cat.category}</h3>
+                <h3 className="text-xs font-bold text-accent-secondary mb-6 uppercase tracking-widest">
+                  {cat.category}
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {cat.items.map((skill) => (
                     <span key={skill} className="skill-badge">
