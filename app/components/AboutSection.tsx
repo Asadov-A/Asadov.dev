@@ -28,7 +28,7 @@ export default function AboutSection() {
     <section id="about" ref={sectionRef} className="section bg-secondary/20 relative">
       <div className="section-container">
         <div className="grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
-          
+
           {/* Biography content */}
           <div className="space-y-6 text-left">
             <h2 className="section-title">
@@ -40,22 +40,27 @@ export default function AboutSection() {
               <p>{t.about.p4}</p>
               <p className="font-semibold text-accent">{t.about.languages}</p>
             </div>
-            
+
             <div className="pt-4 border-t border-subtle">
               <p className="text-xs uppercase tracking-widest text-accent-secondary font-mono mb-2">Motto</p>
               <p className="text-lg font-bold gradient-text">{t.about.motto}</p>
             </div>
 
             {/* Quick Stats badges */}
-            <div className="grid grid-cols-3 gap-4 pt-4 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 text-center">
+              {/* Карточка 1 */}
               <div className="p-4 rounded-2xl glass border-subtle hover:border-accent transition-all duration-300">
                 <div className="text-xl font-bold text-white">{t.about.stats.frontend}</div>
                 <div className="text-xs text-muted mt-1">{t.about.stats.frontendDesc}</div>
               </div>
+
+              {/* Карточка 2 */}
               <div className="p-4 rounded-2xl glass border-subtle hover:border-accent transition-all duration-300">
                 <div className="text-xl font-bold text-white">{t.about.stats.backend}</div>
                 <div className="text-xs text-muted mt-1">{t.about.stats.backendDesc}</div>
               </div>
+
+              {/* Карточка 3 */}
               <div className="p-4 rounded-2xl glass border-subtle hover:border-accent transition-all duration-300">
                 <div className="text-xl font-bold text-white">{t.about.stats.gamedev}</div>
                 <div className="text-xs text-muted mt-1">{t.about.stats.gamedevDesc}</div>
@@ -70,11 +75,11 @@ export default function AboutSection() {
                 <span className="w-2.5 h-2.5 rounded-full bg-accent animate-pulse" />
                 {t.about.focusTitle}
               </h3>
-              
+
               <ul className="space-y-4">
                 {t.about.focusItems.map((item, index) => (
-                  <li 
-                    key={index} 
+                  <li
+                    key={index}
                     className="flex gap-3 text-sm text-text-secondary leading-relaxed"
                     style={{ color: 'var(--text-secondary)' }}
                   >
@@ -83,7 +88,7 @@ export default function AboutSection() {
                   </li>
                 ))}
               </ul>
-              
+
               <div className="pt-4 border-t border-subtle flex items-center justify-between text-xs text-muted font-mono">
                 <span>uzbekistan_tashkent</span>
                 <span>UTC+5</span>

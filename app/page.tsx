@@ -11,14 +11,12 @@ import ContactSection from './components/ContactSection';
 export default function Home() {
   return (
     <>
-      {/* Dynamic Backgrounds */}
       <div className="grid-overlay" />
       <ParticleField />
 
-      {/* Main UI layout */}
       <Navbar />
 
-      <main className="relative z-10 flex-grow">
+      <main className="relative z-10 flex-grow pt-8">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
